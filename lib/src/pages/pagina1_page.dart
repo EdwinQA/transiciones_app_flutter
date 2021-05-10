@@ -31,11 +31,7 @@ class Pagina1Page extends StatelessWidget {
            return SlideTransition(
              position: Tween<Offset>(begin: Offset(0.5, 1.0), end: Offset.zero)
                  .animate(curveAnimation),
-             child: FadeTransition(
-               child: child,
-               opacity:
-                   Tween<double>(begin: 0.0, end: 1.0).animate(curveAnimation),
-             ),
+             child: child
            );
 
            // return ScaleTransition(
